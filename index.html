@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="PINGVI - Developer Portfolio" data-ru="PINGVI - Портфолио разработчика">PINGVI - Developer Portfolio</title>
+    <meta name="description" content="Personal developer portfolio and projects showcase">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🐧</span>
+                    <span class="logo-text">PINGVI</span>
+                </div>
+                <nav class="nav">
+                    <button class="nav-link" data-section="about" data-en="About" data-ru="Обо мне">About</button>
+                    <button class="nav-link" data-section="projects" data-en="Projects" data-ru="Проекты">Projects</button>
+                    <button class="nav-link" data-section="skills" data-en="Skills" data-ru="Навыки">Skills</button>
+                    <button class="nav-link" data-section="contact" data-en="Contact" data-ru="Контакты">Contact</button>
+                </nav>
+                <div class="header-controls">
+                    <button class="language-toggle" id="languageToggle">
+                        <span data-en="EN" data-ru="RU">EN</span>
+                    </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span data-en="Hi, I'm" data-ru="Привет, я">Hi, I'm</span>
+                        <span class="highlight">PINGVI</span>
+                    </h1>
+                    <p class="hero-subtitle" data-en="Full-stack developer passionate about creating innovative solutions" data-ru="Full-stack разработчик, увлеченный созданием инновационных решений">
+                        Full-stack developer passionate about creating innovative solutions
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-section="projects" data-en="View Projects" data-ru="Посмотреть проекты">
+                            View Projects
+                        </button>
+                        <button class="btn btn-secondary" data-section="contact" data-en="Get in Touch" data-ru="Связаться">
+                            Get in Touch
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-animation">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span> 
+                            <span class="code-variable">developer</span> = {
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">name:</span> 
+                            <span class="code-string">'PINGVI'</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">passion:</span> 
+                            <span class="code-string">'coding'</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="code-property">status:</span> 
+                            <span class="code-string">'available'</span>
+                        </div>
+                        <div class="code-line">};</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="section-content">
+                <h2 class="section-title" data-en="About Me" data-ru="Обо мне">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p data-en="I'm a passionate developer who loves turning ideas into reality through code. With expertise in modern web technologies, I create efficient and scalable solutions that make a difference." data-ru="Я увлеченный разработчик, который любит превращать идеи в реальность через код. Обладая опытом в современных веб-технологиях, я создаю эффективные и масштабируемые решения, которые имеют значение.">
+                            I'm a passionate developer who loves turning ideas into reality through code. With expertise in modern web technologies, I create efficient and scalable solutions that make a difference.
+                        </p>
+                        <p data-en="When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community." data-ru="Когда я не пишу код, вы можете найти меня изучающим новые технологии, участвующим в open-source проектах или делящимся знаниями с сообществом разработчиков.">
+                            When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.
+                        </p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label" data-en="Years Experience" data-ru="Лет опыта">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label" data-en="Projects Completed" data-ru="Завершенных проектов">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label" data-en="Client Satisfaction" data-ru="Довольных клиентов">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="section-content">
+                <h2 class="section-title" data-en="Featured Projects" data-ru="Избранные проекты">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">🚀</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-en="E-Commerce Platform" data-ru="E-Commerce платформа">E-Commerce Platform</h3>
+                            <p class="project-description" data-en="A modern e-commerce solution with React, Node.js, and MongoDB" data-ru="Современное e-commerce решение на React, Node.js и MongoDB">
+                                A modern e-commerce solution with React, Node.js, and MongoDB
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-en="Live Demo" data-ru="Демо">Live Demo</a>
+                                <a href="#" class="project-link" data-en="GitHub" data-ru="GitHub">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">📱</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-en="Task Management App" data-ru="Приложение для управления задачами">Task Management App</h3>
+                            <p class="project-description" data-en="A collaborative task management application with real-time updates" data-ru="Коллаборативное приложение для управления задачами с обновлениями в реальном времени">
+                                A collaborative task management application with real-time updates
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-en="Live Demo" data-ru="Демо">Live Demo</a>
+                                <a href="#" class="project-link" data-en="GitHub" data-ru="GitHub">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">🎮</div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title" data-en="Game Development" data-ru="Разработка игр">Game Development</h3>
+                            <p class="project-description" data-en="A collection of browser-based games built with HTML5 Canvas and JavaScript" data-ru="Коллекция браузерных игр, созданных с помощью HTML5 Canvas и JavaScript">
+                                A collection of browser-based games built with HTML5 Canvas and JavaScript
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">Canvas</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-en="Live Demo" data-ru="Демо">Live Demo</a>
+                                <a href="#" class="project-link" data-en="GitHub" data-ru="GitHub">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="section-content">
+                <h2 class="section-title" data-en="Skills & Technologies" data-ru="Навыки и технологии">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title" data-en="Frontend" data-ru="Frontend">Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS/Sass</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title" data-en="Backend" data-ru="Backend">Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-category-title" data-en="Tools & Others" data-ru="Инструменты и другое">Tools & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Git</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">AWS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CI/CD</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="section-content">
+                <h2 class="section-title" data-en="Get In Touch" data-ru="Связаться со мной">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-description" data-en="I'm always interested in new opportunities and exciting projects. Feel free to reach out!" data-ru="Я всегда заинтересован в новых возможностях и интересных проектах. Не стесняйтесь обращаться!">
+                            I'm always interested in new opportunities and exciting projects. Feel free to reach out!
+                        </p>
+                        <div class="contact-links">
+                            <a href="https://github.com/vibe2code" class="contact-link" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span data-en="GitHub" data-ru="GitHub">GitHub</span>
+                            </a>
+                            <a href="mailto:pingvi@example.com" class="contact-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span data-en="Email" data-ru="Email">Email</span>
+                            </a>
+                            <a href="https://linkedin.com/in/pingvi" class="contact-link" target="_blank" rel="noopener">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                                <span data-en="LinkedIn" data-ru="LinkedIn">LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text" data-en="© 2024 PINGVI. Built with ❤️ and lots of ☕" data-ru="© 2024 PINGVI. Создано с ❤️ и большим количеством ☕">
+                    © 2024 PINGVI. Built with ❤️ and lots of ☕
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
